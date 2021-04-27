@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title = "Sign";
+    Layout = "~/Views/Shared/Login_Layout.cshtml";
+}
+@using (Html.BeginForm("Sign", "Home", FormMethod.Post))
+{ }
+
+    <body>
+        <main>
+
+            <div class="background">
+                <div class="text">
+                    <h1>Login</h1>
+                    <p>No Account? <a>@Html.ActionLink("Sign up", "Signup", "Home")</a></p>
+                </div>
+                <div class="box">
+                    <form class="form" action="Verify" method="post">
+                        <input type="text" class="username" placeholder="Username" required>
+                        <input type="password" class="password" placeholder="Password" required>
+                        @*<a href="@Url.Action("Index", "Home")" >*@
+                        <input type="button" class="button" value="Login">
+                       
+                        @*</a>*@
+
+                    </form>
+                </div>
+            </div>
+        </main>
+    </body>
