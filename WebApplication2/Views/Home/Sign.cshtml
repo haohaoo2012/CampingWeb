@@ -3,28 +3,149 @@
     ViewBag.Title = "Sign";
     Layout = "~/Views/Shared/Login_Layout.cshtml";
 }
-@using (Html.BeginForm("Sign", "Home", FormMethod.Post))
-{ }
 
     <body>
-        <main>
-
-            <div class="background">
-                <div class="text">
-                    <h1>Login</h1>
-                    <p>No Account? <a>@Html.ActionLink("Sign up", "Signup", "Home")</a></p>
+        <div id="container" class="container">
+            <!-- Khung -->
+            <div class="row">
+                <!-- Đăng Nhập -->
+                <div class="col align-items-center flex-col sign-up">
+                    <div class="form-wrapper align-items-center">
+                        <div class="form sign-up">
+                            <div class="input-group">
+                                <i class='bx bxs-user'></i>
+                                <input type="text" placeholder="Tên đăng nhập">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bx-mail-send'></i>
+                                <input type="email" placeholder="Email">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input type="password" placeholder="Mật Khẩu">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input type="password" placeholder="Xác nhận mật khẩu">
+                            </div>
+                            <button>
+                                Đăng Ký
+                            </button>
+                            <p>
+                                <span>
+                                    Bạn đã có tài khoản ?
+                                </span>
+                                <b onclick="toggle()" class="pointer">
+                                    Đăng Nhập
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="social-list align-items-center sign-up">
+                            <div class="align-items-center facebook-bg">
+                                <i class='bx bxl-facebook'></i>
+                            </div>
+                            <div class="align-items-center google-bg">
+                                <i class='bx bxl-google'></i>
+                            </div>
+                            <div class="align-items-center twitter-bg">
+                                <i class='bx bxl-twitter'></i>
+                            </div>
+                            <div class="align-items-center insta-bg">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div class="box">
-                    <form class="form" action="Verify" method="post">
-                        <input type="text" class="username" placeholder="Username" required>
-                        <input type="password" class="password" placeholder="Password" required>
-                        @*<a href="@Url.Action("Index", "Home")" >*@
-                        <input type="button" class="button" value="Login">
-                       
-                        @*</a>*@
-
-                    </form>
+                <!-- END SIGN UP -->
+                <!-- SIGN IN -->
+                <div class="col align-items-center flex-col sign-in">
+                    <div class="form-wrapper align-items-center">
+                        <div class="form sign-in">
+                            <div class="input-group">
+                                <i class='bx bxs-user'></i>
+                                <input type="text" placeholder="Tên tài khoản">
+                            </div>
+                            <div class="input-group">
+                                <i class='bx bxs-lock-alt'></i>
+                                <input type="password" placeholder="Mật khẩu">
+                            </div>
+                            <button>
+                                Đăng Nhập
+                            </button>
+                            <p>
+                                <b>
+                                    Quên mật khẩu ?
+                                </b>
+                            </p>
+                            <p>
+                                <span>
+                                    Bạn chưa có tài khoản ?
+                                </span>
+                                <b onclick="toggle()" class="pointer">
+                                    Đăng Ký ngay
+                                </b>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-wrapper">
+                        <div class="social-list align-items-center sign-in">
+                            <div class="align-items-center facebook-bg">
+                                <i class='bx bxl-facebook'></i>
+                            </div>
+                            <div class="align-items-center google-bg">
+                                <i class='bx bxl-google'></i>
+                            </div>
+                            <div class="align-items-center twitter-bg">
+                                <i class='bx bxl-twitter'></i>
+                            </div>
+                            <div class="align-items-center insta-bg">
+                                <i class='bx bxl-instagram-alt'></i>
+                            </div>
+                        </div>
+                    </div>
                 </div>
+                <!-- Hết Đăng nhập -->
             </div>
-        </main>
+            <!-- Hết form -->
+            <!-- Nội Dung-->
+            <div class="row content-row">
+                <!-- Đăng Nhập -->
+                <div class="col align-items-center flex-col">
+                    <div class="text sign-in">
+                        <h2>
+                            Welcome
+                        </h2>
+                        <p>
+
+                        </p>
+                    </div>
+                    <div class="img sign-in">
+                        
+                        <img src="~/image/homeicon.png" alt="welcome"/>
+                    </div>
+                </div>
+                <!-- Hết đăng nhập -->
+                <!-- Đăng ký -->
+                <div class="col align-items-center flex-col">
+                    <div class="img sign-up">
+                        
+                        <img src="~/image/ImageSignIn.svg" alt="welcome" />
+                    </div>
+                    <div class="text sign-up">
+                        <h2>
+                            Gia nhập với chúng tôi
+                        </h2>
+                        <p>
+
+                        </p>
+                    </div>
+                </div>
+                <!-- Hết đăng ký -->
+            </div>
+            <!-- hết nội dung -->
+        </div>
+
+   
     </body>

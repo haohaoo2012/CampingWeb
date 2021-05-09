@@ -71,7 +71,7 @@
                             <p class="product__description">
                                 Núi Bà Đen ở Tây Ninh là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
                             </p>
-                            <a href="#" class="product__button">Read More</a>
+                            <a href="@Url.Action("NuiBaDen","Home")" class="product__button">Read More</a>
                         </div>
                     </li>
                     <li class="product__item">
@@ -86,216 +86,225 @@
                         </div>
                         <div class="product__detail">
                             <h1 class="product__title">
-                               Phú Quốc
+                                Phú Quốc
                             </h1>
                             <p class="product__description">
                                 Đảo Phú Quốc ở Kiên Giang là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
                             </p>
-                            <a href="#" class="product__button">Read More</a>
+                            <form action="#" method="post">
+                                <input type="hidden" name="cmd" value="_cart">
+                                <input type="hidden" name="add" value="1">
+                                <input type="hidden" name="transmitv_item" value="Phú Quốc">
+                                <input type="hidden" name="amount" value="1.200.000">
+                                <a href="@Url.Action("details","Home")"  class="product__button">Read More</a>
+                              
+                            </form>
                         </div>
                     </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/product1.png" alt="thumbnail" />
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            850.000/Ngày
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Vinpearl Land
-                            </h1>
-                            <p class="product__description">
-                                Vinpearl Land ở Nha Trang là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/cocobeach-camp.png" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            800.000/Ngày
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                               CoCo Beach
-                            </h1>
-                            <p class="product__description">
-                                CoCoBeach ở Phan Thiết là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/lifebeach.jpg" alt="thumbnail"  />
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            900.000/night
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Life Beach- Quy Nhơn
-                            </h1>
-                            <p class="product__description">
-                                Life Beach ở Quy Nhơn là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/dongcao.jpg" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            1.200.000/Ngày
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Đồng Cao- Bắc Giang
-                            </h1>
-                            <p class="product__description">
-                                Đồng Cao ở BẮc Giang là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/bavi.jpg" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            850.000/night
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Vườn Quốc Gia Ba Vì
-                            </h1>
-                            <p class="product__description">
-                                VQG Ba Vì ở Hà Nội là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/namcattien.jpg" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            900.000/night
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Vườn Quốc Gia Nam Cát Tiên
-                            </h1>
-                            <p class="product__description">
-                                VQG Nam Cát Tiên ở Lâm Đồng là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/ghenh-da-dia-phu-yen.jpg" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            1.200.000/night
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Bãi biển Phú Yên
-                            </h1>
-                            <p class="product__description">
-                                Bãi biển ở Phú Yên  là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/caobang.jpg" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            850.000/night
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Cao Bằng
-                            </h1>
-                            <p class="product__description">
-                                Cao Bằng là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/deo-Ma-Pi-Leng-Ha-Giang-2.jpg" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            980.000/Ngày
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Mã Pí Lèng
-                            </h1>
-                            <p class="product__description">
-                                Mã Pí Lèng ở Hà Giang là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                    <li class="product__item">
-                        <div class="product__thumbnail">
-                            <img src="~/image/tudung.jpg" alt="thumbnail"/>
-                            <div class="product__love-icon">
-                                <i class='bx bx-heart'></i>
-                            </div>
-                        </div>
-                        <div class="product__price">
-                            1.000.000/Ngày
-                        </div>
-                        <div class="product__detail">
-                            <h1 class="product__title">
-                                Tà Đùng
-                            </h1>
-                            <p class="product__description">
-                                Tà Đùng ở Đăk Nông là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
-                            </p>
-                            <a href="#" class="product__button">Read More</a>
-                        </div>
-                    </li>
-                </ul>
-                <a href="#" class="view-all">View all</a>
+     
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/product1.png" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    850.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Vinpearl Land
+                    </h1>
+                    <p class="product__description">
+                        Vinpearl Land ở Nha Trang là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("NhaTrang","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/cocobeach-camp.png" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    800.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        CoCo Beach
+                    </h1>
+                    <p class="product__description">
+                        CoCoBeach ở Phan Thiết là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("Cocobeach","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/lifebeach.jpg" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    900.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Life Beach- Quy Nhơn
+                    </h1>
+                    <p class="product__description">
+                        Life Beach ở Quy Nhơn là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("LifeBeach","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/dongcao.jpg" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    1.200.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Đồng Cao- Bắc Giang
+                    </h1>
+                    <p class="product__description">
+                        Đồng Cao ở BẮc Giang là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("DongCao","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/bv.jpg" alt="thumbnail"/>                  
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    850.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Vườn Quốc Gia Ba Vì
+                    </h1>
+                    <p class="product__description">
+                        VQG Ba Vì ở Hà Nội là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("Bavi","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/namcattien.jpg" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    900.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Vườn Quốc Gia Nam Cát Tiên
+                    </h1>
+                    <p class="product__description">
+                        VQG Nam Cát Tiên ở Lâm Đồng là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("CatTien","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+
+                    <img src="~/image/pyen.jpg" alt="thumbnail"/>
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    1.200.000/night
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Bãi biển Phú Yên
+                    </h1>
+                    <p class="product__description">
+                        Bãi biển ở Phú Yên  là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="#" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/caobang.jpg" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    550.000/night
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Cao Bằng
+                    </h1>
+                    <p class="product__description">
+                        Cao Bằng là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("CaoBang","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/deo-Ma-Pi-Leng-Ha-Giang-2.jpg" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    780.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Mã Pí Lèng
+                    </h1>
+                    <p class="product__description">
+                        Mã Pí Lèng ở Hà Giang là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("MaPiLeng","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            <li class="product__item">
+                <div class="product__thumbnail">
+                    <img src="~/image/tudung.jpg" alt="thumbnail" />
+                    <div class="product__love-icon">
+                        <i class='bx bx-heart'></i>
+                    </div>
+                </div>
+                <div class="product__price">
+                    1.000.000/Ngày
+                </div>
+                <div class="product__detail">
+                    <h1 class="product__title">
+                        Tà Đùng
+                    </h1>
+                    <p class="product__description">
+                        Tà Đùng ở Đăk Nông là một trong những điểm cắm trại nổi tiếng thu hút nhiều khách du lịch.
+                    </p>
+                    <a href="@Url.Action("TaDung","Home")" class="product__button">Read More</a>
+                </div>
+            </li>
+            </ul>
+            <a href="#" class="view-all">View all</a>
             </div>
         </section>
    @*dụng cụ*@

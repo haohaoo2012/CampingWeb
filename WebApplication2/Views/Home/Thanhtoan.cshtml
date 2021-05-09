@@ -1,0 +1,144 @@
+﻿@{
+    Layout = "~/Views/Shared/ThanhToan_Layout.cshtml";
+}
+
+
+
+
+<body>
+
+    <h2>Thông tin thanh toán</h2>
+    <div class="row">
+        <div class="col-75">
+            <div class="container">
+                <form id="validate" action="/action_page.php">
+                    <div class="row">
+                        <div class="col-50">
+                            <h3>Địa chỉ thanh toán</h3>
+                            <label for="fname"><i class="fa fa-user"></i> Họ và tên</label>
+                            <input type="text" id="fname" name="fullname" placeholder="Nguyen Van A" required>
+                            <label for="email"><i class="fa fa-envelope"></i> Email</label>
+                            <input type="text" id="email" name="email" placeholder="nva@gmail.com" required>
+                            <label for="adr"><i class="fa fa-address-card-o"></i> Địa chỉ</label>
+                            <input type="text" id="adr" name="address" placeholder="123 Trần Duy Hưng" required>
+                            <label for="city"><i class="fa fa-institution"></i>Tỉnh/Thành phố</label>
+                            <input type="text" id="city" name="city" placeholder="Ho Chi Minh" required>
+
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="state">Quận/Huyện</label>
+                                    <input type="text" id="state" name="state" placeholder="Quận.10" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="zip">Zip</label>
+                                    <input type="text" id="zip" name="zip" placeholder="12000" required>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-50">
+                            <h3>Thanh toán</h3>
+                            <label for="fname">Thẻ được chấp nhận</label>
+                            <div class="icon-container">
+                                <i class="fa fa-cc-visa" style="color:navy;"></i>
+                                <i class="fa fa-cc-amex" style="color:blue;"></i>
+                                <i class="fa fa-cc-mastercard" style="color:red;"></i>
+                                <i class="fa fa-cc-discover" style="color:orange;"></i>
+                            </div>
+
+                            <label for="cname">Tên chủ thẻ</label>
+                            <input type="text" id="cname" name="cardname" placeholder="Nguyen Van A" required>
+                            <label for="ccnum">Số thẻ</label>
+                            <input type="text" id="ccnum" name="cardnumber" placeholder="0123456789" required>
+                            <label for="expmonth">Tháng hết hạn</label>
+                            <input type="text" id="expmonth" name="expmonth" placeholder="September" required>
+                            <div class="row">
+                                <div class="col-50">
+                                    <label for="expyear">Năm hết hạn</label>
+                                    <input type="text" id="expyear" name="expyear" placeholder="2021" required>
+                                </div>
+                                <div class="col-50">
+                                    <label for="cvv">CVV</label>
+                                    <input type="text" id="cvv" name="cvv" placeholder="000" required>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <label>
+                        <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
+                    </label>
+                    <input type="submit" value="Continue to checkout" class="btn">
+                </form>
+            </div>
+        </div>
+        <div class="col-25">
+            <div class="container">
+                <h4>Giỏ hàng <span class="price" style="color:black"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+                <p><a href="#">Phú Quốc</a> <span class="price">1.200.000đ</span></p>
+                <p><a href="#">Núi Bà Đen</a> <span class="price">900.000đ</span></p>
+                <p><a href="#">Vinpearl Land</a> <span class="price">850.000đ</span></p>
+                <p><a href="#">Coco Beach</a> <span class="price">800.000</span></p>
+                <hr>
+                <p>Tổng <span class="price" style="color:black"><b>3.750.000đ</b></span></p>
+            </div>
+        </div>
+    </div>
+
+
+
+    <!-- script validate js -->
+    <script>
+        $('#validate').validate({
+            roles: {
+                fullname: {
+                    required: true,
+                },
+                email: {
+                    required: true,
+                },
+                address: {
+                    required: true,
+                },
+                city: {
+                    required: true,
+                },
+                state: {
+                    required: true,
+                },
+                zip: {
+                    required: true,
+                },
+                cardname: {
+                    required: true,
+                },
+                cardnumber: {
+                    required: true,
+                },
+                expmonth: {
+                    required: true,
+                },
+                expyear: {
+                    required: true,
+                },
+                cvv: {
+                    required: true,
+                },
+
+            },
+            messages: {
+                fullname: "Please input full name*",
+                email: "Please input email*",
+                city: "Please input city*",
+                address: "Please input address*",
+                state: "Please input state*",
+                zip: "Please input address*",
+                cardname: "Please input card name*",
+                cardnumber: "Please input card number*",
+                expmonth: "Please input exp month*",
+                expyear: "Please input exp year*",
+                cvv: "Please input cvv*",
+            },
+        });
+    </script>
+</body>
+
