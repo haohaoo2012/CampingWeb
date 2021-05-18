@@ -37,6 +37,10 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
+        public ActionResult PhuYen()
+        {
+            return View();
+        }
         public ActionResult Cocobeach()
         {
             return View();
@@ -57,10 +61,7 @@ namespace WebApplication2.Controllers
         {
             return View();
         }
-        public ActionResult PhuYen()
-        {
-            return View();
-        }
+      
         public ActionResult CaoBang()
         {
             return View();
@@ -74,6 +75,54 @@ namespace WebApplication2.Controllers
             return View();
         }
         public ActionResult Thanhtoan()
+        {
+            return View();
+        }
+        public ActionResult barbecue()
+        {
+            return View();
+        }
+        public ActionResult LoThan()
+        {
+            return View();
+        }
+        public ActionResult Leu()
+        {
+            return View();
+        }
+        public ActionResult Ghe()
+        {
+            return View();
+        }
+        public ActionResult Cui()
+        {
+            return View();
+        }
+        public ActionResult Tham()
+        {
+            return View();
+        }
+        public ActionResult Nuoc()
+        {
+            return View();
+        }
+        public ActionResult Yte()
+        {
+            return View();
+        }
+        public ActionResult Dia()
+        {
+            return View();
+        }
+        public ActionResult Noi()
+        {
+            return View();
+        }
+        public ActionResult Coca()
+        {
+            return View();
+        }
+        public ActionResult Thit()
         {
             return View();
         }

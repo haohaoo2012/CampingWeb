@@ -7,7 +7,8 @@
     <title>Camping web</title>
     <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
     <link href="~/Content/css/style.css" rel="stylesheet" />
-    
+    <LINK REL="SHORTCUT ICON" HREF="~/image/logo.png">
+   
 </head>
 <body>
 
@@ -24,8 +25,7 @@
         <nav class="nav bd-grid">
             <a href="#" class="nav__logo">
 
-                <img src="~/image/logoicon.png" />
-
+                <img src="~/image/logo-removebg-preview.png" />
             </a>
             <div class="nav__box" id="nav-menu">
                 <ul class="nav__list">
@@ -55,8 +55,7 @@
                     </li>
                 </ul>
                 <div class="nav__button">
-                    @*<a href=""class="nav__button-signup">Sign up</a>*@
-                    <a class="nav__button-signup">@Html.ActionLink("Login", "Sign", "Home")</a>
+                    <a class="nav__button-signup" href="@Url.Action("Sign","Home")">Login</a>
 
                 </div>
             </div>
